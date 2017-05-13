@@ -25958,12 +25958,14 @@ body._touch .modal .__overlay-scroll-signin {
 }
 .main-body .btn {
   border-radius: 3px;
+  text-decoration: none;
 }
 .main-body .btn._orange {
   background: #F7731C;
   color: #fff;
   font-weight: bold;
   font-size: 18px;
+  border: 1px solid #F7731C;
   text-transform: uppercase;
 }
 .main-body .btn._orange-border {
@@ -25973,6 +25975,16 @@ body._touch .modal .__overlay-scroll-signin {
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
+}
+.main-body .btn:hover._orange {
+  background: #fff;
+  color: #F7731C;
+  border: 1px solid #F7731C;
+}
+.main-body .btn:hover._orange-border {
+  background: #F7731C;
+  color: #fff;
+  border: 1px solid #F7731C;
 }
 .main-body header {
   width: 100%;
@@ -26020,7 +26032,8 @@ body._touch .modal .__overlay-scroll-signin {
   font-weight: 600;
   color: #F7731C;
 }
-.main-body header .header li:hover a {
+.main-body header .header li:hover a,
+.main-body header .header li._active a {
   color: #F7731C;
 }
 .main-body footer {
@@ -26086,13 +26099,6 @@ body._touch .modal .__overlay-scroll-signin {
 .main-body .intro .info .btn {
   padding: 10px 40px;
 }
-.main-body .intro .info .btn._orange {
-  background: #F7731C;
-  color: #fff;
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-}
 .main-body .intro .img-sec {
   width: 50%;
   float: left;
@@ -26135,7 +26141,7 @@ body._touch .modal .__overlay-scroll-signin {
   color: #333;
 }
 .main-body .technology {
-  background: url('../images/tech-bg.png') center center;
+  background: url('images/tech-bg.png') center center;
   background-size: cover;
   padding-bottom: 50px;
 }
@@ -26160,13 +26166,6 @@ body._touch .modal .__overlay-scroll-signin {
 }
 .main-body .technology .info .btn {
   padding: 10px 30px;
-}
-.main-body .technology .info .btn._orange {
-  background: #F7731C;
-  color: #fff;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
 }
 .main-body .products {
   padding: 50px 0;
@@ -26212,13 +26211,6 @@ body._touch .modal .__overlay-scroll-signin {
 }
 .main-body .products .turmgel-item .info .btn {
   padding: 10px 31px;
-}
-.main-body .products .turmgel-item .info .btn._orange {
-  background: #F7731C;
-  color: #fff;
-  font-weight: bold;
-  font-size: 15px;
-  text-transform: uppercase;
 }
 .main-body .about {
   padding: 100px 0;
@@ -26384,6 +26376,34 @@ body._touch .modal .__overlay-scroll-signin {
   position: absolute;
   right: 0;
   top: 205px;
+}
+.main-body .testimonials .btn-container {
+  zoom: 1;
+  margin-top: 100px;
+}
+.main-body .testimonials .btn-container:before,
+.main-body .testimonials .btn-container:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+.main-body .testimonials .btn-container:after {
+  clear: both;
+}
+.main-body .testimonials .btn-container .btn {
+  display: table;
+  zoom: 1;
+  margin: 0 auto;
+  padding: 10px 31px;
+}
+.main-body .testimonials .btn-container .btn:before,
+.main-body .testimonials .btn-container .btn:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+.main-body .testimonials .btn-container .btn:after {
+  clear: both;
 }
 .main-body .contact .details {
   zoom: 1;
