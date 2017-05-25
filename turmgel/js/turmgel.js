@@ -9,7 +9,7 @@ jQuery('document').ready(function() {
         nextArrow: '<span class="buttons next" aria-label="Next" tabindex="0" ><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M29.6,95c-1.7-0.1-3.2-1.1-4.1-3c-0.9-1.9-0.6-3.8,0.7-5.5c0.2-0.2,0.4-0.4,0.5-0.5c4.6-4.6,9.2-9.2,13.8-13.9c6.3-6.3,12.5-12.6,18.8-18.9c2-2,2-4.7,0-6.7C48.4,35.7,37.6,24.9,26.7,14c-1.2-1.2-1.9-2.4-1.9-4c0.1-2.1,1.1-3.7,3-4.5c1.9-0.9,3.7-0.5,5.3,0.7c0.3,0.2,0.4,0.4,0.7,0.6c13.3,13.3,26.5,26.5,39.8,39.8c2.2,2.2,2.1,4.7,0,6.8C70,57,66.5,60.6,62.9,64.2C55,72.2,47,80.1,39.2,88c-1.8,1.8-3.6,3.6-5.4,5.4C32.7,94.4,31.5,95,29.6,95z"/></svg></span>'
     });
     // tabbed content
-    // http://www.entheosweb.com/tutorials/css/tabss.asp
+    // http://www.entheosweb.com/tutorialscss/tabss.asp
     $(".tab_content").hide();
     $(".tab_content:first").show();
 
@@ -40,53 +40,11 @@ jQuery('document').ready(function() {
         $("ul.tabss li").removeClass("active");
         $("ul.tabss li[rel^='" + d_activeTab + "']").addClass("active");
     });
+    /* if in drawer mode */
+    $(".panel-heading").click(function() {
+        var $this = $(this);
+        $this.find("svg").toggleClass("_active");
+    });
 
 
-    /* Extra class "tab_last" 
-       to add border to right side
-       of last tab */
-    $('ul.tabss li').last().addClass("tab_last");
-    $('header nav a').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        	$("#logo").removeClass("menuDown").addClass("menuUp");
-			$('#hamburger').removeClass('open');
-        	$("header nav").slideUp("medium");
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-    $("#navToggle a").click(function(e){
-        e.preventDefault();
-        $('#hamburger').removeClass('open');
-        $("header nav").slideToggle("medium");
-        $("#logo").toggleClass("menuUp menuDown");
-    });
-    
-    $(window).resize(function() {
-        if($( window ).width() >= "600") {
-            $("header > nav").css("display", "block");
-            
-            if($("#logo").attr('class') == "menuDown") {
-                $("#logo").toggleClass("menuUp menuDown");
-            }
-        }
-        else {
-            $("header > nav").css("display", "none");
-        }
-    });
-    
-    $("header > nav > ul > li > a").click(function(e) {
-        if($( window ).width() <= "600") {
-            if($(this).siblings().size() > 0 ) {
-                $(this).siblings().slideToggle("fast")
-				$(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
-            }
-        }
-    });
 });
