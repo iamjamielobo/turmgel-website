@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+///////////////////////// Variables /////////////////////////////
+
+@theme-white: #ffffff;
+@theme-uno: #333;
+
+///////////////////////// Mixins /////////////////////////////
+
+.block() {
+	display: block;
+}
+
+.inline() {
+	display: inline-block;
+}
+
+.width() {
+	width: 100%;
+}
+
+.relative() {
+	position: relative;
+}
+
+.absolute() {
+	position: absolute;
+}
+
+.left() {
+	float: left;
+}
+
+.align-left() {
+	text-align: left;
+}
+
+.align-right() {
+	text-align: right;
+}
+
+.align-center() {
+	text-align: center;
+}
+
+.center() {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.uppercase() {
+	text-transform: uppercase;
+}
+
+.clearfix() {
+    zoom: 1;
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+        // Fixes Opera/contenteditable bug:
+        // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.transition (@property: all;
+@transition-time: @transition-time;
+@easing: ease) {
+    -webkit-transition: @property @transition-time @easing;
+    -moz-transition: @property @transition-time @easing;
+    -o-transition: @property @transition-time @easing;
+    transition: @property @transition-time @easing;
+}
+
+.rotate(@value) {
+    -webkit-transform: rotate(@value);
+    -moz-transform: rotate(@value);
+    -ms-transform: rotate(@value);
+    -o-transform: rotate(@value);
+    transform: rotate(@value);
+}
