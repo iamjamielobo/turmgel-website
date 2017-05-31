@@ -1631,7 +1631,7 @@ a:hover {
   }
 }
 .main-body .intro .info .__alt-text {
-  padding-top: 0;
+  padding: 27px 0 42px;
   font-size: 21px;
   line-height: 1.52;
 }
