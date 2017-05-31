@@ -1169,17 +1169,6 @@ table {
 .main-body .benefits .benefits-container .tab_drawer_heading {
   display: none;
 }
-@media screen and (max-width: 991px) {
-  .main-body .benefits .benefits-container ul.tabss li .__icon {
-    width: 120px;
-    height: 120px;
-  }
-  .main-body .benefits .benefits-container ul.tabss li .__icon svg {
-    width: 60px;
-    height: 60px;
-    margin-top: 25px;
-  }
-}
 @media screen and (max-width: 769px) {
   .main-body .benefits .benefits-container .tabss {
     display: none;
@@ -1964,6 +1953,7 @@ a:hover {
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .about .about-container .turmgel-speciality .__img img {
     width: 100%;
+    max-width: 300px;
   }
 }
 .main-body .about .about-container .turmgel-speciality .__img .__sub-text {
@@ -2023,6 +2013,7 @@ a:hover {
   .main-body .blog .blog-wrapper .blog-block {
     width: 100%;
     margin-bottom: 25px;
+    padding: 0;
   }
   .main-body .blog .blog-wrapper .blog-block:last-child {
     margin-bottom: 0;
@@ -2076,6 +2067,12 @@ a:hover {
 .main-body .benefits {
   padding-bottom: 0;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .benefits .benefits-container ul.tabss {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 .main-body .benefits .benefits-container ul.tabss li {
   width: 33.3333%;
 }
@@ -2093,6 +2090,13 @@ a:hover {
 }
 @media (min-width: 769px) and (max-width: 991px) {
   .main-body .benefits .benefits-container .tab_content {
+    padding-top: 25px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .benefits .benefits-container .tab_content {
+    width: 100%;
+    margin: 0 0 25px;
     padding-top: 25px;
   }
 }
@@ -2132,6 +2136,9 @@ a:hover {
   .main-body .benefits .benefits-container .tab_content .wrapper .text-block._dotted {
     padding: 15px;
   }
+}
+.main-body .benefits .benefits-container .tab_drawer_heading {
+  padding: 5px 20px 25px;
 }
 .main-body .accordian-container .lhs .panel-heading,
 .main-body .accordian-container .rhs .panel-heading {
@@ -2263,17 +2270,32 @@ a:hover {
     padding: 0;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+.main-body .testimonials .prev,
+.main-body .testimonials .next {
+  z-index: 10;
+}
+@media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial-block {
     width: 100%;
     padding-top: 100px;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 992px) and (max-width: 1279px) {
+  .main-body .testimonials .testimonial-block {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial {
     width: 100%;
     min-height: inherit;
     padding: 300px 0 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1279px) {
+  .main-body .testimonials .testimonial {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
   }
 }
 .main-body .testimonials .testimonial-wrapper {
@@ -2287,14 +2309,14 @@ a:hover {
 .main-body .testimonials .testimonial-content {
   line-height: 1.71;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial-content {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial-user {
     top: -100px;
     left: 50%;
