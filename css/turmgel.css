@@ -90,6 +90,14 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -2297,6 +2305,9 @@ a:hover {
     margin: 0 auto;
   }
 }
+.main-body .testimonials .testimonial {
+  padding: 50px 30px 50px 160px;
+}
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial {
     width: 100%;
@@ -2327,6 +2338,9 @@ a:hover {
     padding-right: 20px;
     text-align: center;
   }
+}
+.main-body .testimonials .testimonial-user {
+  left: -120px;
 }
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial-user {
