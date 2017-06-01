@@ -46,5 +46,6 @@ jQuery('document').ready(function() {
         $this.find("svg").toggleClass("_active");
     });
 
+    $('#date').text(new Date().getFullYear());
 
 });

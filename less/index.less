@@ -11,7 +11,7 @@
 @md: ~"(min-width: 992px) and (max-width: 1279px)";
 
 .main-body {
-	padding-top: 30px;
+	padding-top: 0px;
 	.btn-container {
 		.clearfix;
 		.align-center;
@@ -20,6 +20,7 @@
 		font-size: 15px;
 		letter-spacing: 0;
 		padding: 8px 40px;
+		font-weight: 400;
 	}
 	section {
 		@media @xs {
@@ -31,13 +32,13 @@
 		}
 	}
 	.intro {
-		background: rgba(255,255,255,1);
-		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,247,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(250,250,247,1)));
-		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,247,1) 100%);
-		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,247,1) 100%);
-		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,247,1) 100%);
-		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,250,247,1) 100%);
+		background: rgba(250,250,247,1);
+		background: -moz-linear-gradient(top, rgba(250,250,247,1) 0%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,250,247,1)), color-stop(100%, rgba(255,255,255,1)));
+		background: -webkit-linear-gradient(top, rgba(250,250,247,1) 0%, rgba(255,255,255,1) 100%);
+		background: -o-linear-gradient(top, rgba(250,250,247,1) 0%, rgba(255,255,255,1) 100%);
+		background: -ms-linear-gradient(top, rgba(250,250,247,1) 0%, rgba(255,255,255,1) 100%);
+		background: linear-gradient(to bottom, rgba(250,250,247,1) 0%, rgba(255,255,255,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafaf7', GradientType=0 );
 		.img-sec {
 			float: right;
@@ -62,7 +63,7 @@
 					font-size: 36px;
 					font-weight: 300;
 					line-height: 1.5;
-					padding: 20px 0 10px;
+					padding: 20px 0 00px;
 				}
 			}
 			.btn {
@@ -74,7 +75,7 @@
 				}
 			}
 			.__alt-text {
-				padding: 27px 0 42px;
+				padding: 10px 0 42px;
 				font-size: 21px;
 				line-height: 1.52;
 				@media @xs, @sm {
@@ -132,6 +133,10 @@
 						border: 0;
 						overflow: hidden;
 						padding: 0;
+						display: inline-flex;
+						svg {
+							margin: auto;
+						}
 					}
 					.__dash {
 						width: 30px;
@@ -213,6 +218,7 @@
 					.__alt-text {
 						font-size: 16px;
 						line-height: 1.5;
+						padding: 0 0 20px;
 					}
 				}
 			}
@@ -227,13 +233,13 @@
 			box-shadow: none;
 			.intro-text {
 				.block;
-				font-size: 21px;
+				font-size: 18px;
 				color: @theme-uno;
 				background: #FAFAF8;
 				text-align: justify;
 				line-height: 32px;
 				padding: 130px 0 50px;
-				margin-top: 350px;
+				margin-top: 275px;
 				line-height: 32px;
 				.align-center;
 				.about-intro-wrapper {
@@ -264,7 +270,7 @@
 				width: 100%;
 				.clearfix;
 				.absolute;
-				top: 0;
+				top: 0px;
 				left: 0;
 				z-index: 10;
 				@media @sm, @xs {
@@ -276,8 +282,8 @@
 				.about-text-wrapper {
 					max-width: 940px;
 					width: 100%;
-					.box-shadow(0 5px 12px 0 rgba(0, 0, 0, 0.2););
-					padding: 50px;
+					.box-shadow(0 5px 12px 0 rgba(0, 0, 0, 0.08););
+					padding: 40px;
 					.center;
 					.clearfix;
 					background: #fff;
@@ -301,6 +307,7 @@
 					img {
 						.block;
 						.center;
+						max-width: 320px;
 						@media @xs {
 							.width;
 							max-width: 300px;
@@ -310,7 +317,7 @@
 						font-size: 36px;
 						color: @theme-uno;
 						font-weight: 100;
-						margin-top: -50px;
+						margin-top: -20px;
 						display: block;
 						@media @xs {
 							.width;
@@ -443,13 +450,13 @@
 						color: @orange;
 					}
 					.text-block {
-						padding: 30px 15px 15px;
+						padding: 19px 15px;
 						.__texttitle {
-							font-size: 18px;
+							font-size: 21px;
 							color: @theme-uno;
-							font-weight: bold;
+							font-weight: 600;
 							padding-bottom: 10px;
-							line-height: 42px;
+							line-height: 32px;
 							.block;
 							.width;
 						}
@@ -462,6 +469,11 @@
 						}
 						&._dotted {
 							border: 2px dotted @orange;
+							margin-bottom: 19px;
+							.__texttitle {
+								font-size: 18px;
+								line-height: 28px;
+							}
 							@media @xs {
 								padding: 15px;
 							}
@@ -619,6 +631,7 @@
 		.testimonial-wrapper {
 			outline: 0!important;
 			border: 0;
+			padding-bottom: 25px;
 			&:focus {
 				outline: 0!important;
 				border: 0;
@@ -640,12 +653,18 @@
 			}
 			.name {
 				line-height: 27px;
+				font-weight: 600;
 			}
 			.role {
 				line-height: 23px;
 			}
 			.__rating {
 				padding-top: 40px;
+			}
+		}
+		.slick-dots {
+			li.slick-active {
+				background: @orange;
 			}
 		}
 		&._page {
@@ -662,6 +681,18 @@
 		background: #FBF9F7;
 	}
 	footer .footer-logos .__logo {
+		&._fb {
+			background: #3b5998;
+			color: @theme-white;
+		}
+		&._tw {
+			background: #4099ff;
+			color: @theme-white;
+		}
+		&._li {
+			background: #0077bf;
+			color: @theme-white;
+		}
 		&:last-child {
 			@media @xs {
 				margin-right: 0;

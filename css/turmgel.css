@@ -201,7 +201,7 @@ table {
 .main-body .btn._orange {
   background: #FE8535;
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
   border: 1px solid #FE8535;
   text-transform: uppercase;
 }
@@ -209,7 +209,7 @@ table {
   background: #fff;
   color: #FE8535;
   border: 1px solid #FE8535;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .main-body .btn:hover._orange {
@@ -1547,7 +1547,7 @@ a:hover {
   }
 }
 .main-body {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 .main-body .btn-container {
   zoom: 1;
@@ -1566,6 +1566,7 @@ a:hover {
   font-size: 15px;
   letter-spacing: 0;
   padding: 8px 40px;
+  font-weight: 400;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body section {
@@ -1577,13 +1578,13 @@ a:hover {
   }
 }
 .main-body .intro {
-  background: #ffffff;
-  background: -moz-linear-gradient(top, #ffffff 0%, #fafaf7 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fafaf7));
-  background: -webkit-linear-gradient(top, #ffffff 0%, #fafaf7 100%);
-  background: -o-linear-gradient(top, #ffffff 0%, #fafaf7 100%);
-  background: -ms-linear-gradient(top, #ffffff 0%, #fafaf7 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #fafaf7 100%);
+  background: #fafaf7;
+  background: -moz-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fafaf7), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #fafaf7 0%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fafaf7', GradientType=0);
 }
 .main-body .intro .img-sec {
@@ -1616,7 +1617,7 @@ a:hover {
     font-size: 36px;
     font-weight: 300;
     line-height: 1.5;
-    padding: 20px 0 10px;
+    padding: 20px 0 00px;
   }
 }
 .main-body .intro .info .btn {
@@ -1631,7 +1632,7 @@ a:hover {
   }
 }
 .main-body .intro .info .__alt-text {
-  padding: 27px 0 42px;
+  padding: 10px 0 42px;
   font-size: 21px;
   line-height: 1.52;
 }
@@ -1707,6 +1708,10 @@ a:hover {
   border: 0;
   overflow: hidden;
   padding: 0;
+  display: inline-flex;
+}
+.main-body .features .wrapper ul li .feature-block .img svg {
+  margin: auto;
 }
 .main-body .features .wrapper ul li .feature-block .__dash {
   width: 30px;
@@ -1813,6 +1818,7 @@ a:hover {
 .main-body .products .wrapper .turmgel-item .info .__alt-text {
   font-size: 16px;
   line-height: 1.5;
+  padding: 0 0 20px;
 }
 .main-body .about {
   background: #FFF;
@@ -1824,12 +1830,12 @@ a:hover {
 }
 .main-body .about .about-container .intro-text {
   display: block;
-  font-size: 21px;
+  font-size: 18px;
   color: #333;
   background: #FAFAF8;
   text-align: justify;
   padding: 130px 0 50px;
-  margin-top: 350px;
+  margin-top: 275px;
   line-height: 32px;
   text-align: center;
 }
@@ -1878,7 +1884,7 @@ a:hover {
   width: 100%;
   zoom: 1;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   z-index: 10;
 }
@@ -1904,10 +1910,10 @@ a:hover {
 .main-body .about .about-container .turmgel-speciality .about-text-wrapper {
   max-width: 940px;
   width: 100%;
-  -webkit-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
-  padding: 50px;
+  -webkit-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.08);
+  padding: 40px;
   margin-left: auto;
   margin-right: auto;
   zoom: 1;
@@ -1949,6 +1955,7 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 320px;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .about .about-container .turmgel-speciality .__img img {
@@ -1960,7 +1967,7 @@ a:hover {
   font-size: 36px;
   color: #333;
   font-weight: 100;
-  margin-top: -50px;
+  margin-top: -20px;
   display: block;
 }
 @media (min-width: 320px) and (max-width: 768px) {
@@ -2111,14 +2118,14 @@ a:hover {
   color: #FE8535;
 }
 .main-body .benefits .benefits-container .tab_content .wrapper .text-block {
-  padding: 30px 15px 15px;
+  padding: 19px 15px;
 }
 .main-body .benefits .benefits-container .tab_content .wrapper .text-block .__texttitle {
-  font-size: 18px;
+  font-size: 21px;
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
   padding-bottom: 10px;
-  line-height: 42px;
+  line-height: 32px;
   display: block;
   width: 100%;
 }
@@ -2131,6 +2138,11 @@ a:hover {
 }
 .main-body .benefits .benefits-container .tab_content .wrapper .text-block._dotted {
   border: 2px dotted #FE8535;
+  margin-bottom: 19px;
+}
+.main-body .benefits .benefits-container .tab_content .wrapper .text-block._dotted .__texttitle {
+  font-size: 18px;
+  line-height: 28px;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .benefits .benefits-container .tab_content .wrapper .text-block._dotted {
@@ -2301,6 +2313,7 @@ a:hover {
 .main-body .testimonials .testimonial-wrapper {
   outline: 0!important;
   border: 0;
+  padding-bottom: 25px;
 }
 .main-body .testimonials .testimonial-wrapper:focus {
   outline: 0!important;
@@ -2325,12 +2338,16 @@ a:hover {
 }
 .main-body .testimonials .testimonial-user .name {
   line-height: 27px;
+  font-weight: 600;
 }
 .main-body .testimonials .testimonial-user .role {
   line-height: 23px;
 }
 .main-body .testimonials .testimonial-user .__rating {
   padding-top: 40px;
+}
+.main-body .testimonials .slick-dots li.slick-active {
+  background: #FE8535;
 }
 .main-body .testimonials._page .testimonial-wrapper {
   margin-bottom: 50px;
@@ -2341,6 +2358,18 @@ a:hover {
 }
 .main-body .contact {
   background: #FBF9F7;
+}
+.main-body footer .footer-logos .__logo._fb {
+  background: #3b5998;
+  color: #ffffff;
+}
+.main-body footer .footer-logos .__logo._tw {
+  background: #4099ff;
+  color: #ffffff;
+}
+.main-body footer .footer-logos .__logo._li {
+  background: #0077bf;
+  color: #ffffff;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body footer .footer-logos .__logo:last-child {
