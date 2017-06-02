@@ -2043,6 +2043,7 @@ a:hover {
 .main-body .blog .blog-wrapper .blog-block .__blog .img {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .blog .blog-wrapper .blog-block .__blog .img img {
@@ -2293,10 +2294,16 @@ a:hover {
 .main-body .testimonials .next {
   z-index: 10;
 }
+.main-body .testimonials .testimonial-block {
+  width: 837px;
+  padding-left: 120px;
+  margin: auto;
+}
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial-block {
     width: 100%;
     padding-top: 100px;
+    padding-left: 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1279px) {
@@ -2307,6 +2314,7 @@ a:hover {
 }
 .main-body .testimonials .testimonial {
   padding: 50px 30px 50px 160px;
+  margin: auto;
 }
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial {
@@ -2387,6 +2395,11 @@ a:hover {
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body footer .footer-logos .__logo:last-child {
     margin-right: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body footer .__copyright .brk-copyright {
+    display: block;
   }
 }
 .main-body .technology_page .tecnology-content {
