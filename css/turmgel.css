@@ -2397,96 +2397,119 @@ a:hover {
     margin-right: 0;
   }
 }
-.main-body .technology_page .tecnology-content {
-  background: #ffffff;
+.main-body .technology_page .wrapper {
+  background: #fff;
 }
-.main-body .technology_page .tecnology-content .upper-wrapper {
+.main-body .technology_page .wrapper .tecnology-content {
+  background-color: #fff;
+}
+.main-body .technology_page .wrapper .tecnology-content .upper-wrapper {
   max-width: 829px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-.main-body .technology_page .tecnology-content .upper-wrapper .__text {
+.main-body .technology_page .wrapper .tecnology-content .upper-wrapper .__text {
   padding: 50px 0;
   font-size: 18px;
   color: #333;
   text-align: center;
-  line-height: 32px;
+  line-height: 1.78;
 }
-.main-body .technology_page .tecnology-content .upper-wrapper .title-emphasis {
+.main-body .technology_page .wrapper .tecnology-content .upper-wrapper .title-emphasis {
   width: 100%;
-  padding: 50px;
+  padding: 40px;
   font-weight: 100;
   font-size: 52px;
   color: #333;
   line-height: 64px;
   text-align: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  line-height: 1.23;
 }
-.main-body .technology_page .tecnology-content .upper-wrapper .pointers {
-  padding-top: 50px;
-  padding-left: 100px;
+.main-body .technology_page .wrapper .tecnology-content .upper-wrapper .pointers {
+  padding-top: 42px;
+  padding-left: 50px;
 }
-.main-body .technology_page .tecnology-content .upper-wrapper .pointers ul li {
+.main-body .technology_page .wrapper .tecnology-content .upper-wrapper .pointers ul li {
   font-size: 18px;
   color: #333;
   padding-bottom: 10px;
   list-style-type: disc;
   padding-left: 10px;
+  line-height: 1.78;
 }
-.main-body .technology_page .tecnology-content .differences .__title {
+.main-body .technology_page .wrapper .tecnology-content .upper-wrapper .pointers ul li:last-child {
+  padding-bottom: 0;
+}
+.main-body .technology_page .wrapper .tecnology-content .differences .__title {
   font-weight: 100;
   font-size: 32px;
   color: #333;
-  padding: 100px 0 50px;
+  padding: 50px 0 40px;
+  line-height: 1.5;
   text-align: center;
 }
-.main-body .technology_page .tecnology-content .differences .container {
+.main-body .technology_page .wrapper .tecnology-content .differences .container {
   width: 100%;
   zoom: 1;
 }
-.main-body .technology_page .tecnology-content .differences .container:before,
-.main-body .technology_page .tecnology-content .differences .container:after {
+.main-body .technology_page .wrapper .tecnology-content .differences .container:before,
+.main-body .technology_page .wrapper .tecnology-content .differences .container:after {
   content: " ";
   display: table;
   line-height: 0;
 }
-.main-body .technology_page .tecnology-content .differences .container:after {
+.main-body .technology_page .wrapper .tecnology-content .differences .container:after {
   clear: both;
 }
-.main-body .technology_page .tecnology-content .differences .container .block {
+.main-body .technology_page .wrapper .tecnology-content .differences .container .block {
   width: 50%;
   float: left;
   padding: 0 50px;
 }
-.main-body .technology_page .tecnology-content .differences .container .block:nth-child(odd) {
+.main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {
   padding-right: 25px;
 }
-.main-body .technology_page .tecnology-content .differences .container .block:nth-child(even) {
+.main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(even) {
   padding-left: 25px;
 }
-.main-body .technology_page .tecnology-content .differences .container .block .__cnt-title {
+.main-body .technology_page .wrapper .tecnology-content .differences .container .block .__cnt-title {
   font-size: 18px;
   color: #333;
   font-weight: 600;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #FE8535;
+  border-bottom: 2px solid #FE8535;
   text-align: center;
 }
-.main-body .technology_page .tecnology-content .differences .container .block ul li {
+.main-body .technology_page .wrapper .tecnology-content .differences .container .block ul li {
   font-size: 18px;
   color: #333;
   padding-bottom: 15px;
   list-style-type: disc;
   margin-left: 30px;
+  line-height: 1.78;
 }
-.main-body .technology_page .faq-title {
+.main-body .technology_page .wrapper .faq-title {
   font-size: 32px;
   color: #333;
-  line-height: 48px;
+  line-height: 1.5;
   padding: 50px 0;
   font-weight: 100;
   text-align: center;
   display: block;
+}
+.main-body .technology_page .wrapper .accordian-container {
+  margin-bottom: 80px;
+}
+.main-body._noPadding {
+  padding: 0;
+}
+.main-body._noPadding .technology_page {
+  padding: 0;
+}
+.main-body._noPadding .technology_page h2 {
+  background-color: #fbf9f7;
+  padding-top: 50px;
 }

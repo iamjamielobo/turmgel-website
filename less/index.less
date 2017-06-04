@@ -762,94 +762,117 @@
 		}
 	}
 	.technology_page {
-		.tecnology-content {
-			background: @theme-white;
-			.upper-wrapper {
-				max-width: 829px;
-				.width;
-				.center;
-				.__text {
-					padding: 50px 0;
-					font-size: 18px;
-					color: @theme-uno;
-					.align-center;
-					line-height: 32px;
-				}
-				.title-emphasis {
+		.wrapper {
+			background: #fff;
+			.tecnology-content {
+				background-color: #fff;
+				.upper-wrapper {
+					max-width: 829px;
 					.width;
-					padding: 50px;
-					font-weight: 100;
-					font-size: 52px;
-					color: @theme-uno;
-					line-height: 64px;
-					.align-center;
-					.box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.2););
-				}
-				.pointers {
-					padding-top: 50px;
-					padding-left: 100px;
-					ul {
-						li {
-							font-size: 18px;
-							color: @theme-uno;
-							padding-bottom: 10px;
-							list-style-type: disc;
-							padding-left: 10px;
-						}
+					.center;
+					.__text {
+						padding: 50px 0;
+						font-size: 18px;
+						color: @theme-uno;
+						.align-center;
+						line-height: 1.78;
 					}
-				}
-			}
-			.differences {
-				.__title {
-					font-weight: 100;
-					font-size: 32px;
-					color: @theme-uno;
-					padding: 100px 0 50px;
-					.align-center;
-				}
-				.container {
-					.width;
-					.clearfix;
-					.block {
-						width: 50%;
-						.left;
-						padding: 0 50px;
-						&:nth-child(odd) {
-							padding-right: 25px;
-						}
-						&:nth-child(even) {
-							padding-left: 25px;
-						}
-						.__cnt-title {
-							font-size: 18px;
-							color: @theme-uno;
-							font-weight: 600;
-							padding-bottom: 15px;
-							margin-bottom: 15px;
-							border-bottom: 1px solid @orange;
-							.align-center;
-						}
+					.title-emphasis {
+						.width;
+						padding: 40px;
+						font-weight: 100;
+						font-size: 52px;
+						color: @theme-uno;
+						line-height: 64px;
+						.align-center;
+						.box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.2););
+						line-height: 1.23;
+					}
+					.pointers {
+						padding-top: 42px;
+						padding-left: 50px;
 						ul {
 							li {
 								font-size: 18px;
 								color: @theme-uno;
-								padding-bottom: 15px;
+								padding-bottom: 10px;
 								list-style-type: disc;
-								margin-left: 30px;
+								padding-left: 10px;
+								line-height: 1.78;
+								&:last-child {
+									padding-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+				.differences {
+					.__title {
+						font-weight: 100;
+						font-size: 32px;
+						color: @theme-uno;
+						padding: 50px 0 40px;
+						line-height: 1.5;
+						.align-center;
+					}
+					.container {
+						.width;
+						.clearfix;
+						.block {
+							width: 50%;
+							.left;
+							padding: 0 50px;
+							&:nth-child(odd) {
+								padding-right: 25px;
+							}
+							&:nth-child(even) {
+								padding-left: 25px;
+							}
+							.__cnt-title {
+								font-size: 18px;
+								color: @theme-uno;
+								font-weight: 600;
+								padding-bottom: 15px;
+								margin-bottom: 15px;
+								border-bottom: 2px solid @orange;
+								.align-center;
+							}
+							ul {
+								li {
+									font-size: 18px;
+									color: @theme-uno;
+									padding-bottom: 15px;
+									list-style-type: disc;
+									margin-left: 30px;
+									line-height: 1.78
+								}
 							}
 						}
 					}
 				}
 			}
+			.faq-title {
+				font-size: 32px;
+				color: @theme-uno;
+				line-height: 1.5;
+				padding: 50px 0;
+				font-weight: 100;
+				.align-center;
+				.block;
+			}
+			.accordian-container {
+				margin-bottom: 80px;
+			}
 		}
-		.faq-title {
-			font-size: 32px;
-			color: @theme-uno;
-			line-height: 48px;
-			padding: 50px 0;
-			font-weight: 100;
-			.align-center;
-			.block;
+	}
+	&._noPadding {
+		padding: 0;
+		.technology_page {
+			padding: 0;
+			h2 {
+				background-color: #fbf9f7;
+				padding-top: 50px;
+			}
 		}
 	}
 }
