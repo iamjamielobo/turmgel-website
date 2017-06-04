@@ -1,5 +1,6 @@
 var path = require('path');
 var gulp = require('gulp');
+var less = require('gulp-less');
 var LessAutoprefix = require('less-plugin-autoprefix');
 var autoprefix = new LessAutoprefix({ browsers: ['last 4 versions', 'iOS>=7', 'android >= 4.0', 'and_uc >= 9.9'] });
 
@@ -12,3 +13,6 @@ gulp.task('less', function () {
     }))
     .pipe(gulp.dest('./css'))
 });
+
+
+gulp.task('default', ['less']);
