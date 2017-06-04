@@ -5,7 +5,7 @@ jQuery('document').ready(function() {
         'images/product-image.png',
         'images/product-image.png'
     ];
-    
+
     var curIndex = 0;
     var imgDuration = 3000;
 
@@ -21,10 +21,6 @@ jQuery('document').ready(function() {
     }
 
     slideShow();
-
-    if ( isTouchDevice ) {
-        $('.main-body').addClass('_touch');
-    }
 
     jQuery("#testimonial-slick").slick({
         dots: true,

@@ -1564,7 +1564,7 @@ a:hover {
 .main-body:not(._touch) .btn._orange:hover {
   background: #fff;
   color: #FE8535;
-  border: 1px solid #FE8535;
+  border: 1px solid #fff;
 }
 .main-body:not(._touch) .btn._orange-border:hover {
   background: #FE8535;
