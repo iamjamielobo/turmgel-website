@@ -65,7 +65,7 @@
 					line-height: 1.5;
 					padding: 20px 0 00px;
 				}
-				@media (max-width: 768px) {
+				@media (max-width: 768px) and (min-width: 768px) {
 					font-size: 63px;
 					line-height: 1.17;
 				}
@@ -442,8 +442,12 @@
 				}
 				@media @xs {
 					width: 100%;
-					margin: 0 0 25px;
-					padding-top: 25px;
+					z-index: 0;
+					padding-top: 100px;
+					margin: -125px 0 50px;
+					&:last-child {
+						margin-bottom: 0;
+					}
 				}
 				.wrapper {
 					max-width: 780px;
@@ -487,6 +491,21 @@
 			}
 			.tab_drawer_heading {
 				padding: 5px 20px 25px;
+				.__icon {
+			        background-color: #fbf9f7;
+				}
+				&.d_active {
+					pointer-events: none;
+					position: relative;
+					@media @xs {
+						.__icon {
+					        background-color: #fff;
+					    }
+					    .__text {
+					        opacity: 0;
+					    }
+					}
+				}
 			}
 		}
 	}

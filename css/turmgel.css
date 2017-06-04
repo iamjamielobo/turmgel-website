@@ -1603,7 +1603,7 @@ a:hover {
     padding: 20px 0 00px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 768px) {
   .main-body .intro .info .__title {
     font-size: 63px;
     line-height: 1.17;
@@ -2087,8 +2087,12 @@ a:hover {
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .benefits .benefits-container .tab_content {
     width: 100%;
-    margin: 0 0 25px;
-    padding-top: 25px;
+    z-index: 0;
+    padding-top: 100px;
+    margin: -125px 0 50px;
+  }
+  .main-body .benefits .benefits-container .tab_content:last-child {
+    margin-bottom: 0;
   }
 }
 .main-body .benefits .benefits-container .tab_content .wrapper {
@@ -2135,6 +2139,21 @@ a:hover {
 }
 .main-body .benefits .benefits-container .tab_drawer_heading {
   padding: 5px 20px 25px;
+}
+.main-body .benefits .benefits-container .tab_drawer_heading .__icon {
+  background-color: #fbf9f7;
+}
+.main-body .benefits .benefits-container .tab_drawer_heading.d_active {
+  pointer-events: none;
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .benefits .benefits-container .tab_drawer_heading.d_active .__icon {
+    background-color: #fff;
+  }
+  .main-body .benefits .benefits-container .tab_drawer_heading.d_active .__text {
+    opacity: 0;
+  }
 }
 .main-body .accordian-container .lhs .panel-heading,
 .main-body .accordian-container .rhs .panel-heading {
