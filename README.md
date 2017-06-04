@@ -1,3 +1,3 @@
 # turmgel-website
-npm install
-gulp
+> npm install
+> gulp
