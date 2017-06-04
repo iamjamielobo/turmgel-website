@@ -306,9 +306,12 @@ table {
 .main-body footer .footer-logos .__logo {
   float: left;
   padding-top: 10px;
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: scale(0.75);
+      -ms-transform: scale(0.75);
+          transform: scale(0.75);
   border-radius: 50%;
   background: #D8D8D8;
   font-size: 30px;
@@ -2221,7 +2224,6 @@ a:hover {
 }
 .main-body .technology .info .__alt-text {
   opacity: 0.7;
-  font-family: SourceSansPro;
   font-size: 21px;
   line-height: 1.52;
 }
