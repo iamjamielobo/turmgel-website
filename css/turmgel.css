@@ -666,9 +666,9 @@ table {
 .main-body .testimonials {
   padding-bottom: 50px;
   background: #fafaf8;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fafaf8), color-stop(100%, #ffffff));
-  background: -webkit-linear-gradient(top, #fafaf8 0%, #ffffff 100%);
-  background: linear-gradient(to bottom, #fafaf8 0%, #ffffff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fafaf8), color-stop(30%, #ffffff));
+  background: -webkit-linear-gradient(top, #fafaf8 0%, #ffffff 30%);
+  background: linear-gradient(to bottom, #fafaf8 0%, #ffffff 30%);
 }
 .main-body .testimonials .testimonial {
   width: 720px;
@@ -1054,6 +1054,20 @@ table {
   margin-right: auto;
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 992px) {
+  .main-body .benefits .benefits-container ul.tabss li .__icon {
+    -webkit-transition: opacity 500ms, -webkit-transform 500ms ease;
+    transition: opacity 500ms, -webkit-transform 500ms ease;
+    transition: transform 500ms ease, opacity 500ms;
+    transition: transform 500ms ease, opacity 500ms, -webkit-transform 500ms ease;
+  }
+  .main-body .benefits .benefits-container ul.tabss li .__icon:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0.75;
+  }
+}
 .main-body .benefits .benefits-container ul.tabss li .__icon svg {
   width: 95px;
   height: 95px;
@@ -1071,6 +1085,9 @@ table {
 }
 .main-body .benefits .benefits-container ul.tabss li.active {
   position: relative;
+}
+.main-body .benefits .benefits-container ul.tabss li.active .__text {
+  color: #FE8535;
 }
 .main-body .benefits .benefits-container ul.tabss li.active svg {
   fill: #FE8535;
@@ -1120,7 +1137,6 @@ table {
   background: #FAFAF8;
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
   border-top: 1px solid #87827D;
-  border-bottom: 1px solid #87827D;
 }
 .main-body .benefits .benefits-container .tab_content .tab-content {
   width: 100%;
@@ -1177,6 +1193,8 @@ table {
     -ms-user-select: none;
     user-select: none;
     text-align: center;
+    position: relative;
+    z-index: 2;
   }
   .main-body .benefits .benefits-container .d_active {
     background-color: transparent;
