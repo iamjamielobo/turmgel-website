@@ -554,7 +554,6 @@ table {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fafaf8+100 */
   background: #fff;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #fff 0%, #fafaf8 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #fff 0%, #fafaf8 100%);
   /* Chrome10-25,Safari5.1-6 */
@@ -600,8 +599,6 @@ table {
   position: relative;
   zoom: 1;
   color: #333;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .main-body .about .about-container:before,
@@ -631,8 +628,6 @@ table {
   padding: 60px 20px;
   font-size: 21px;
   line-height: 34px;
-  -webkit-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
 }
 .main-body .about .about-container .__turmgel-speciality span {
@@ -668,11 +663,8 @@ table {
 .main-body .testimonials {
   padding-bottom: 50px;
   background: #fafaf8;
-  background: -moz-linear-gradient(top, #fafaf8 0%, #ffffff 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #fafaf8), color-stop(100%, #ffffff));
   background: -webkit-linear-gradient(top, #fafaf8 0%, #ffffff 100%);
-  background: -o-linear-gradient(top, #fafaf8 0%, #ffffff 100%);
-  background: -ms-linear-gradient(top, #fafaf8 0%, #ffffff 100%);
   background: linear-gradient(to bottom, #fafaf8 0%, #ffffff 100%);
 }
 .main-body .testimonials .testimonial {
@@ -681,8 +673,6 @@ table {
   position: relative;
   background-color: #fcfaf8;
   padding: 50px 30px 50px 200px;
-  -webkit-box-shadow: 3px 6px 12px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 3px 6px 12px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 3px 6px 12px 0 rgba(0, 0, 0, 0.15);
 }
 .main-body .testimonials .testimonial-wrapper {
@@ -710,8 +700,6 @@ table {
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 2px;
-  -webkit-box-shadow: 3px 5px 12px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 3px 5px 12px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 3px 5px 12px 0 rgba(0, 0, 0, 0.2);
 }
 .main-body .testimonials .testimonial-user .img {
@@ -895,9 +883,7 @@ table {
   position: relative;
   background: #fff;
   text-align: left;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
   /* Firefox 3.5 - 3.10 */
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
   /* Opera 10.5, IE 9 */
@@ -935,9 +921,7 @@ table {
   color: #333;
   line-height: 32px;
   padding: 15px;
-  -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
   /* Firefox 3.5 - 3.10 */
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.12);
   /* Opera 10.5, IE 9 */
@@ -1065,8 +1049,6 @@ table {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
 }
 .main-body .benefits .benefits-container ul.tabss li .__icon svg {
@@ -1133,8 +1115,6 @@ table {
   padding: 20px;
   display: none;
   background: #FAFAF8;
-  -webkit-box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
   border-top: 1px solid #87827D;
   border-bottom: 1px solid #87827D;
@@ -1190,7 +1170,6 @@ table {
     cursor: pointer;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -1209,8 +1188,6 @@ table {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    -webkit-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
   }
   .main-body .benefits .benefits-container .tab_drawer_heading .__icon svg {
@@ -1301,6 +1278,7 @@ a:hover {
   border: none;
   outline: none;
   background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 500ms ease-in-out;
   transition: opacity 500ms ease-in-out;
 }
 .slick-prev:hover,
@@ -1386,7 +1364,6 @@ a:hover {
 .slick-slider {
   position: relative;
   display: block;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1416,9 +1393,7 @@ a:hover {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 .slick-track {
@@ -1587,11 +1562,8 @@ a:hover {
 }
 .main-body .intro {
   background: #fafaf7;
-  background: -moz-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #fafaf7), color-stop(100%, #ffffff));
   background: -webkit-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
-  background: -o-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
-  background: -ms-linear-gradient(top, #fafaf7 0%, #ffffff 100%);
   background: linear-gradient(to bottom, #fafaf7 0%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fafaf7', GradientType=0);
 }
@@ -1688,8 +1660,6 @@ a:hover {
   width: 260px;
   height: 260px;
   padding: 18px 0;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 992px) and (max-width: 1279px) {
@@ -1716,6 +1686,9 @@ a:hover {
   border: 0;
   overflow: hidden;
   padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .main-body .features .wrapper ul li .feature-block .img svg {
@@ -1776,8 +1749,6 @@ a:hover {
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .products .wrapper .turmgel-item {
     padding: 30px 0;
-    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
     width: 100%;
     margin-left: auto;
@@ -1918,8 +1889,6 @@ a:hover {
 .main-body .about .about-container .turmgel-speciality .about-text-wrapper {
   max-width: 940px;
   width: 100%;
-  -webkit-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.08);
   padding: 40px;
   margin-left: auto;
@@ -2035,15 +2004,12 @@ a:hover {
   }
 }
 .main-body .blog .blog-wrapper .blog-block .__blog {
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
   overflow: hidden;
 }
 .main-body .blog .blog-wrapper .blog-block .__blog .img {
   display: block;
   position: relative;
-  overflow: hidden;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .blog .blog-wrapper .blog-block .__blog .img img {
@@ -2174,8 +2140,6 @@ a:hover {
 .main-body .accordian-container .lhs .panel-heading svg,
 .main-body .accordian-container .rhs .panel-heading svg {
   -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
   transition: all 300ms ease;
   top: 23px;
   right: 27px;
@@ -2191,13 +2155,9 @@ a:hover {
 .main-body .accordian-container .rhs .panel-heading svg._active {
   fill: #FE8535;
   -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
   transition: all 300ms ease;
   -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 @media (min-width: 320px) and (max-width: 768px) {
@@ -2261,6 +2221,7 @@ a:hover {
 }
 .main-body .technology .info .__alt-text {
   opacity: 0.7;
+  font-family: SourceSansPro;
   font-size: 21px;
   line-height: 1.52;
 }
@@ -2294,16 +2255,10 @@ a:hover {
 .main-body .testimonials .next {
   z-index: 10;
 }
-.main-body .testimonials .testimonial-block {
-  width: 837px;
-  padding-left: 120px;
-  margin: auto;
-}
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial-block {
     width: 100%;
     padding-top: 100px;
-    padding-left: 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1279px) {
@@ -2311,10 +2266,6 @@ a:hover {
     width: 768px;
     margin: 0 auto;
   }
-}
-.main-body .testimonials .testimonial {
-  padding: 50px 30px 50px 160px;
-  margin: auto;
 }
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial {
@@ -2347,14 +2298,13 @@ a:hover {
     text-align: center;
   }
 }
-.main-body .testimonials .testimonial-user {
-  left: -120px;
-}
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px), (min-width: 992px) and (max-width: 1279px) {
   .main-body .testimonials .testimonial-user {
     top: -100px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 .main-body .testimonials .testimonial-user .name {
@@ -2397,11 +2347,6 @@ a:hover {
     margin-right: 0;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  .main-body footer .__copyright .brk-copyright {
-    display: block;
-  }
-}
 .main-body .technology_page .tecnology-content {
   background: #ffffff;
 }
@@ -2426,8 +2371,6 @@ a:hover {
   color: #333;
   line-height: 64px;
   text-align: center;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .main-body .technology_page .tecnology-content .upper-wrapper .pointers {
