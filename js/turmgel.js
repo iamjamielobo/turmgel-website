@@ -1,4 +1,31 @@
 jQuery('document').ready(function() {
+
+    var imgArray = [
+        'images/product-image.png',
+        'images/product-image.png',
+        'images/product-image.png'
+    ];
+    
+    var curIndex = 0;
+    var imgDuration = 3000;
+
+    function slideShow() {
+        document.getElementById('slider').className += "fadeOut";
+        setTimeout(function() {
+            document.getElementById('slider').src = imgArray[curIndex];
+            document.getElementById('slider').className = "";
+        },1000);
+        curIndex++;
+        if (curIndex == imgArray.length) { curIndex = 0; }
+        setTimeout(slideShow, imgDuration);
+    }
+
+    slideShow();
+
+    if ( isTouchDevice ) {
+        $('.main-body').addClass('_touch');
+    }
+
     jQuery("#testimonial-slick").slick({
         dots: true,
         speed: 300,
