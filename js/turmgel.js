@@ -48,4 +48,10 @@ jQuery('document').ready(function() {
 
     $('#date').text(new Date().getFullYear());
 
+    $("#know-more").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".about").offset().top
+        }, 1000);
+    });
+
 });
