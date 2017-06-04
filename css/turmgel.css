@@ -1603,6 +1603,12 @@ a:hover {
     padding: 20px 0 00px;
   }
 }
+@media (max-width: 768px) {
+  .main-body .intro .info .__title {
+    font-size: 63px;
+    line-height: 1.17;
+  }
+}
 .main-body .intro .info .btn {
   font-size: 18px;
   line-height: 23px;
