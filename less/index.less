@@ -178,8 +178,9 @@
 						overflow: hidden;
 						padding: 0;
 						display: inline-flex;
-						svg {
+						svg, img {
 							margin: auto;
+							fill: #87827d;
 						}
 					}
 					.__dash {
@@ -208,6 +209,34 @@
 						@media @md {
 							font-size: 13px;
 							line-height: 16px;
+						}
+					}
+				}
+				&:first-child {
+					.feature-block {
+						.img {
+							svg {
+								width: 58px;
+							}
+						}
+					}
+				}
+				&:last-child {
+					.feature-block {
+						.img {
+							svg {
+								width: 93px;
+							}
+						}
+					}
+				}
+				&:nth-last-child(2) {
+					.feature-block {
+						.img {
+							img {
+								width: 72px;
+								height: 69px;
+							}
 						}
 					}
 				}
@@ -472,6 +501,15 @@
 							padding-top: 25px;
 						}
 					}
+					&.active {
+						.__icon {
+							svg {
+								.mark-active {
+									fill: @orange;
+								}
+							}
+						}
+					}
 				}
 			}
 			.tab_content {
@@ -552,6 +590,16 @@
 
 	.accordian-container .lhs,
 	.accordian-container .rhs {
+		.__img {
+			svg {
+				fill: #87827d;
+			}
+			&._active {
+				svg {
+					fill: @orange;
+				}
+			}
+		}
 		.panel-heading {
 			padding: 20px 20px 25px 20px;
 			@media @xs {
@@ -764,6 +812,9 @@
 	.technology_page {
 		.wrapper {
 			background: #fff;
+			@media @xs, @sm {
+				padding: 0 20px;
+			}
 			.tecnology-content {
 				background-color: #fff;
 				.upper-wrapper {
@@ -862,6 +913,188 @@
 			}
 			.accordian-container {
 				margin-bottom: 80px;
+			}
+		}
+	}
+	.faq-page {
+		background: #fbf9f7;
+		.tabs {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			.center;
+			display: table;
+			.clearfix;
+			li {
+				float: left;
+				cursor: pointer;
+				&._active {
+					text-align: center;
+					.tab-container {
+						border-bottom: 4px solid @orange;
+						padding-bottom: 30px;
+						.tab-wrapper {
+							.__img {
+								svg {
+									fill: @orange;
+								}
+							}
+							.__text {
+								color: @orange;
+							}
+						}
+					}
+				}
+				&:first-child, &:last-child {
+					.tab-container {
+						padding: 0 50px 30px;
+					}
+				}
+				.tab-container {
+					width: 100%;
+					.clearfix;
+					.tab-wrapper {
+						display: table;
+						margin: 0 auto;
+						.__img {
+							.left;
+							svg {
+								fill: #87827d;
+							}
+						}
+						.__text {
+							.left;
+							font-size: 24px;
+							font-weight: 600;
+							line-height: 31px;
+							color: #87827d;
+							padding-top: 20px;
+							padding-left: 20px;
+						}
+					}
+				}
+			}
+			@media @sm, @xs {
+				display: none;
+			}
+		}
+		.tab-content {
+			display: none;
+			padding: 60px 0;
+			background: @theme-white;
+			@media @sm, @xs {
+				padding: 0;
+				display: block;
+			}
+			&:last-child {
+				@media @sm, @xs {
+					padding: 0 0 60px;
+				}
+			}
+			.lhs,
+			.rhs {
+				.__img {
+					svg {
+						fill: #87827d;
+					}
+					&._active {
+						svg {
+							fill: @orange;
+						}
+					}
+				}
+				.panel-heading {
+					padding: 20px 20px 25px 20px;
+					@media @xs {
+						padding: 13px;
+					}
+					svg {
+						.transition (all; 300ms; ease);
+						top: 23px;
+						right: 27px;
+						@media @xs {
+							top: 18px;
+							right: 21px;
+						}
+						&._active {
+							fill: @orange;
+							.transition (all; 300ms; ease);
+							.rotate(180deg);
+						}
+					}
+				}
+				.panel-title {
+					@media @xs {
+						font-size: 18px;
+						line-height: 23px;
+					}
+				}
+				.__text {
+					@media @xs {
+						font-size: 24px;
+						line-height: 31px;
+						padding: 10px 0 20px
+					}
+				}
+				&.rhs {
+					@media @xs {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.tab-container {
+				@media @sm, @xs {
+					padding: 30px 0;
+				}
+				.tab-wrapper {
+					display: none;
+					margin: 0 auto;
+					.__img {
+						.left;
+						svg {
+							fill: @orange;
+						}
+					}
+					.__text {
+						.left;
+						font-size: 24px;
+						font-weight: 600;
+						line-height: 31px;
+						color: @orange;
+						padding-top: 20px;
+						padding-left: 20px;
+					}
+					@media @sm, @xs {
+						display: table;
+					}
+				}
+			}
+			.panel-group {
+				.panel {
+					border: 0;
+					.panel-heading {
+						.panel-title {
+
+						}
+						svg {
+							.transition (all; 300ms; ease);
+							top: 23px;
+							right: 27px;
+							@media @xs {
+								top: 18px;
+								right: 21px;
+							}
+							&._active {
+								fill: @orange;
+								.transition (all; 300ms; ease);
+								.rotate(180deg);
+							}
+						}
+					}
+				}
+			}
+			&._active {
+				display: inherit;
 			}
 		}
 	}

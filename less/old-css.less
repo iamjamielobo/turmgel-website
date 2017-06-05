@@ -758,7 +758,9 @@
     clear: both;
 }
 .main-body .accordian-container .lhs,
-.main-body .accordian-container .rhs {
+.main-body .accordian-container .rhs,
+.tab-content .lhs,
+.tab-content .rhs {
     width: 50%;
     float: left;
     text-align: center;
@@ -774,8 +776,7 @@
     color: #FE8535;
     font-size: 24px;
 }
-.main-body .accordian-container .lhs .panel-heading,
-.main-body .accordian-container .rhs .panel-heading {
+.panel-heading {
     zoom: 1;
     display: block;
     position: relative;
@@ -792,20 +793,16 @@
     
     padding: 15px;
 }
-.main-body .accordian-container .lhs .panel-heading:before,
-.main-body .accordian-container .rhs .panel-heading:before,
-.main-body .accordian-container .lhs .panel-heading:after,
-.main-body .accordian-container .rhs .panel-heading:after {
+.panel-heading:before,
+.panel-heading:after {
     content: " ";
     display: table;
     line-height: 0;
 }
-.main-body .accordian-container .lhs .panel-heading:after,
-.main-body .accordian-container .rhs .panel-heading:after {
+.panel-heading:after {
     clear: both;
 }
-.main-body .accordian-container .lhs .panel-heading svg,
-.main-body .accordian-container .rhs .panel-heading svg {
+.panel-heading svg {
     position: absolute;
     top: 20px;
     right: 15px;
@@ -813,12 +810,10 @@
     height: 15px;
     fill: #333;
 }
-.main-body .accordian-container .lhs .panel-heading:hover,
-.main-body .accordian-container .rhs .panel-heading:hover {
+.panel-heading:hover {
     text-decoration: none;
 }
-.main-body .accordian-container .lhs .panel-body,
-.main-body .accordian-container .rhs .panel-body {
+.panel-body {
     font-size: 21px;
     font-weight: 100;
     color: #333;
@@ -835,12 +830,12 @@
     
     text-align: left;
 }
-.main-body .accordian-container .lhs .panel-group .panel,
-.main-body .accordian-container .rhs .panel-group .panel {
+
+.panel-group .panel {
     border-radius: 0;
 }
-.main-body .accordian-container .lhs .panel-title,
-.main-body .accordian-container .rhs .panel-title {
+
+.panel-title {
     font-size: 21px;
     padding-right: 30px;
     color: #333;
@@ -850,10 +845,12 @@
     margin-top: 10px;
     padding: 6px 35px;
 }
-.main-body .accordian-container .lhs {
+.main-body .accordian-container .lhs,
+.tab-content .lhs {
     padding-right: 20px;
 }
-.main-body .accordian-container .rhs {
+.main-body .accordian-container .rhs,
+.tab-content .rhs {
     padding-left: 20px;
 }
 
@@ -867,12 +864,21 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    .tab-content .lhs,
+    .tab-content .rhs {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 769px) {
 
-    .main-body .accordian-container .lhs .panel-title,
-    .main-body .accordian-container .rhs .panel-title {
+    .panel-title {
         font-size: 14px;
         padding-right: 30px;
     }
@@ -880,24 +886,20 @@
         margin-bottom: 15px;
     }
 
-    .main-body .accordian-container .lhs .panel-heading,
-    .main-body .accordian-container .rhs .panel-heading {
+    .panel-heading {
         padding: 10px;
     }
 
-    .main-body .accordian-container .lhs .panel-heading svg,
-    .main-body .accordian-container .rhs .panel-heading svg {
+    .panel-heading svg {
         top: 10px;
     }
 
-    .main-body .accordian-container .lhs .panel-body,
-    .main-body .accordian-container .rhs .panel-body {
+   .panel-body {
         font-size: 14px;
         line-height: 18px;
         padding: 10px;
     }
-    .main-body .accordian-container .lhs .__text,
-    .main-body .accordian-container .rhs .__text {
+    .__text {
         padding: 10px 0 30px;
         font-size: 18px;
     }

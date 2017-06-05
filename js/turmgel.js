@@ -55,4 +55,14 @@ jQuery('document').ready(function() {
         }, 1000);
     });
 
+    $('.faq-page ul li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('_active');
+        $('.tab-content').removeClass('_active');
+
+        $(this).addClass('_active');
+        $("#"+tab_id).addClass('_active');
+    })
+
 });
