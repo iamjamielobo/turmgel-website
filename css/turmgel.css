@@ -1609,8 +1609,10 @@ a:hover {
     display: none;
   }
 }
-.main-body .intro #slider.fadeOut {
+.main-body .intro #slider.fadeOut img {
   opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 .main-body .intro .info {
   float: left;
