@@ -946,9 +946,14 @@
 					}
 				}
 				&:first-child, &:last-child {
+					padding-right: 15px;
 					.tab-container {
 						padding: 0 50px 30px;
 					}
+				}
+				&:last-child {
+					padding-right: 0;
+					padding-left: 15px;
 				}
 				.tab-container {
 					width: 100%;
@@ -970,6 +975,24 @@
 							color: #87827d;
 							padding-top: 20px;
 							padding-left: 20px;
+						}
+					}
+				}
+				&:hover {
+					&:not(._active) {
+						.tab-container {
+							border-bottom: 4px solid @orange;
+							padding-bottom: 30px;
+							.tab-wrapper {
+								.__img {
+									svg {
+										fill: @orange;
+									}
+								}
+								.__text {
+									color: @orange;
+								}
+							}
 						}
 					}
 				}

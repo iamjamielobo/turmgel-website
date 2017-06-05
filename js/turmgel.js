@@ -1,5 +1,4 @@
 jQuery('document').ready(function() {
-
     jQuery("#testimonial-slick").slick({
         dots: true,
         speed: 300,
@@ -64,5 +63,15 @@ jQuery('document').ready(function() {
         $(this).addClass('_active');
         $("#"+tab_id).addClass('_active');
     })
+
+    if ( location.hash ) {
+        var hastTxt = location.hash;
+
+        if ( hastTxt === '#tab2' ) {
+            $('[data-tab=tab-2]').click()
+        } else {
+            $('[data-tab=tab-1]').click()
+        }
+    }
 
 });

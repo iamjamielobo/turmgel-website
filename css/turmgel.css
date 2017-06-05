@@ -1521,6 +1521,13 @@ a:hover {
     padding: 9px 35px 10px!important;
   }
 }
+.panel {
+  border: 0;
+}
+.panel-default > .panel-heading {
+  background-color: #fff;
+  border-color: #ddd;
+}
 .main-body {
   padding-top: 0px;
 }
@@ -2568,9 +2575,17 @@ a:hover {
 .main-body .faq-page .tabs li._active .tab-container .tab-wrapper .__text {
   color: #FE8535;
 }
+.main-body .faq-page .tabs li:first-child,
+.main-body .faq-page .tabs li:last-child {
+  padding-right: 15px;
+}
 .main-body .faq-page .tabs li:first-child .tab-container,
 .main-body .faq-page .tabs li:last-child .tab-container {
   padding: 0 50px 30px;
+}
+.main-body .faq-page .tabs li:last-child {
+  padding-right: 0;
+  padding-left: 15px;
 }
 .main-body .faq-page .tabs li .tab-container {
   width: 100%;
@@ -2603,6 +2618,16 @@ a:hover {
   color: #87827d;
   padding-top: 20px;
   padding-left: 20px;
+}
+.main-body .faq-page .tabs li:hover:not(._active) .tab-container {
+  border-bottom: 4px solid #FE8535;
+  padding-bottom: 30px;
+}
+.main-body .faq-page .tabs li:hover:not(._active) .tab-container .tab-wrapper .__img svg {
+  fill: #FE8535;
+}
+.main-body .faq-page .tabs li:hover:not(._active) .tab-container .tab-wrapper .__text {
+  color: #FE8535;
 }
 @media (min-width: 769px) and (max-width: 991px), (min-width: 320px) and (max-width: 768px) {
   .main-body .faq-page .tabs {
