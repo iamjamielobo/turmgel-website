@@ -781,11 +781,72 @@
 			}
 		}
 		&._page {
-			.testimonial-wrapper {
-				margin-bottom: 50px;
-				.testimonial-block {
-					margin-left: 0;
-					padding-left: 100px;
+			.testimonial-side {
+				width: 70%;
+				.left;
+				.testimonial-wrapper {
+					margin-bottom: 50px;
+					.testimonial-block {
+						margin-left: 0;
+						padding-left: 100px;
+					}
+				}
+			}
+			.form-side {
+				width: 30%;
+				.left;
+				padding: 0 0 0 30px;
+				.align-center;
+				.form-title {
+					line-height: 31px;
+					font-size: 24px;
+					font-weight: 600;
+					color: #333333;
+					padding-bottom: 15px;
+					display: block;
+				}
+				.form-group {
+					.clearfix;
+					&.option {
+						label {
+							.left;
+							color: #333;
+							font-weight: 600;
+						}
+						select {
+							float: left;
+							width: 150px;
+							margin-left: 15px;
+							border-radius: 1px;
+							border: 1px solid @orange;
+						}
+					}
+					.form-control {
+						border: 1px solid #ccc;
+						border-radius: 1px;
+						color: #333;
+						height: auto;
+						padding: 8px 12px;
+					}
+					.checkbox+.checkbox, .radio+.radio {
+						margin-top: 10px;
+					}
+					.radio {
+						.left;
+						label {
+							padding-left: 40px;
+							color: #333;
+							font-weight: 600;
+						}
+						input[type=radio] {
+							margin: 0.5px 0px 0px -25px;
+						}
+						&:first-child {
+							label {
+								padding-left: 30px;
+							}
+						}
+					}
 				}
 			}
 		}

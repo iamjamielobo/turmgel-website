@@ -24,7 +24,7 @@
 			<section id="testimonials" class="testimonials _page">
 				<div class="wrapper">
 					<h2>What our customers have to say</h2>
-					<div>
+					<div class="testimonial-side">
 						<div class="testimonial-wrapper">
 							<div class="testimonial-block">
 							    <div class="testimonial">
@@ -88,6 +88,58 @@
 							    </div>
 							</div>
 						</div>
+					</div>
+					<div class="form-side">
+						<span class="form-title">Submit Testimonial</span>
+						<form class="testimonial-form">
+							<div class="form-group">
+								<input type="text" class="form-control" id="first_name_id" name="first_name" placeholder="First Name">
+							</div>	
+							<div class="form-group">
+								<input type="text" class="form-control" id="last_name_id" name="last_name" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email_id" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" type="tel" id="mobile_id" name="mobile" placeholder="Mobile No.(optional)" maxlength="10">
+							</div>				
+							<div class="form-group"> 
+								<input type="text" class="form-control" id="city_id" name="city" placeholder="City">
+							</div>	
+
+							<div class="form-group">
+								<input type="number" class="form-control" id="age_id" name="age" min="1" max="100" placeholder="Age(optional)">
+							</div>	
+							<div class="form-group">
+								<div class="radio">
+									<label><input type="radio" name="gender" value="male">Male</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="gender" value="female">Female</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="designation_id" name="designation" placeholder="Designation(optional)">
+							</div>
+							<div class="form-group">
+								 <textarea class="form-control" rows="3" id="comment" placeholder="Comments"></textarea>
+							</div>	
+							<div class="form-group option">
+								<label for="sel1">Rating: </label>
+								<select class="form-control" id="sel1">
+									<option>1 star</option>
+									<option>2 star</option>
+									<option>3 star</option>
+									<option>4 star</option>
+									<option>5 star</option>
+								</select>
+							</div>	
+							
+							<div class="form-group"> <!-- Submit Button -->
+								<button type="submit" class="btn _orange">Send Testimonial</button>
+							</div> 
+						</form>
 					</div>
 				</div>
 			</section>

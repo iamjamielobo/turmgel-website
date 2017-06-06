@@ -2401,12 +2401,79 @@ a:hover {
 .main-body .testimonials .slick-dots li.slick-active {
   background: #FE8535;
 }
-.main-body .testimonials._page .testimonial-wrapper {
+.main-body .testimonials._page .testimonial-side {
+  width: 70%;
+  float: left;
+}
+.main-body .testimonials._page .testimonial-side .testimonial-wrapper {
   margin-bottom: 50px;
 }
-.main-body .testimonials._page .testimonial-wrapper .testimonial-block {
+.main-body .testimonials._page .testimonial-side .testimonial-wrapper .testimonial-block {
   margin-left: 0;
   padding-left: 100px;
+}
+.main-body .testimonials._page .form-side {
+  width: 30%;
+  float: left;
+  padding: 0 0 0 30px;
+  text-align: center;
+}
+.main-body .testimonials._page .form-side .form-title {
+  line-height: 31px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  padding-bottom: 15px;
+  display: block;
+}
+.main-body .testimonials._page .form-side .form-group {
+  zoom: 1;
+}
+.main-body .testimonials._page .form-side .form-group:before,
+.main-body .testimonials._page .form-side .form-group:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+.main-body .testimonials._page .form-side .form-group:after {
+  clear: both;
+}
+.main-body .testimonials._page .form-side .form-group.option label {
+  float: left;
+  color: #333;
+  font-weight: 600;
+}
+.main-body .testimonials._page .form-side .form-group.option select {
+  float: left;
+  width: 150px;
+  margin-left: 15px;
+  border-radius: 1px;
+  border: 1px solid #FE8535;
+}
+.main-body .testimonials._page .form-side .form-group .form-control {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  color: #333;
+  height: auto;
+  padding: 8px 12px;
+}
+.main-body .testimonials._page .form-side .form-group .checkbox + .checkbox,
+.main-body .testimonials._page .form-side .form-group .radio + .radio {
+  margin-top: 10px;
+}
+.main-body .testimonials._page .form-side .form-group .radio {
+  float: left;
+}
+.main-body .testimonials._page .form-side .form-group .radio label {
+  padding-left: 40px;
+  color: #333;
+  font-weight: 600;
+}
+.main-body .testimonials._page .form-side .form-group .radio input[type=radio] {
+  margin: 0.5px 0px 0px -25px;
+}
+.main-body .testimonials._page .form-side .form-group .radio:first-child label {
+  padding-left: 30px;
 }
 .main-body .contact {
   background: #FBF9F7;
