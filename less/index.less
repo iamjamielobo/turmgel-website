@@ -885,6 +885,10 @@
 					max-width: 829px;
 					.width;
 					.center;
+					@media @sm {
+						max-width: none;
+						.width;
+					}
 					.__text {
 						padding: 50px 0;
 						font-size: 18px;
@@ -937,11 +941,21 @@
 							width: 50%;
 							.left;
 							padding: 0 50px;
+							@media @xs {
+								.width;
+								padding: 0;
+							}
 							&:nth-child(odd) {
 								padding-right: 25px;
+								@media @xs {
+									padding: 0;
+								}
 							}
 							&:nth-child(even) {
 								padding-left: 25px;
+								@media @xs {
+									padding: 0;
+								}
 							}
 							.__cnt-title {
 								font-size: 18px;

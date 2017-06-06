@@ -2512,6 +2512,12 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 769px) and (max-width: 991px) {
+  .main-body .technology_page .wrapper .tecnology-content .upper-wrapper {
+    max-width: none;
+    width: 100%;
+  }
+}
 .main-body .technology_page .wrapper .tecnology-content .upper-wrapper .__text {
   padding: 50px 0;
   font-size: 18px;
@@ -2571,11 +2577,27 @@ a:hover {
   float: left;
   padding: 0 50px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block {
+    width: 100%;
+    padding: 0;
+  }
+}
 .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {
   padding-right: 25px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {
+    padding: 0;
+  }
+}
 .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(even) {
   padding-left: 25px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(even) {
+    padding: 0;
+  }
 }
 .main-body .technology_page .wrapper .tecnology-content .differences .container .block .__cnt-title {
   font-size: 18px;
