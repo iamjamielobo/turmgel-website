@@ -781,69 +781,93 @@
 			}
 		}
 		&._page {
+			padding-top: 0;
+			h2 {
+				padding-top: 50px;
+				margin-bottom: 110px;
+				background: #FBF9F7;
+			}
 			.testimonial-side {
 				width: 70%;
 				.left;
+				@media @sm, @xs {
+					.width;
+				}
 				.testimonial-wrapper {
 					margin-bottom: 50px;
 					.testimonial-block {
 						margin-left: 0;
 						padding-left: 100px;
+						@media @md, @sm, @xs {
+							padding-left: 0;
+							.width;
+						}
 					}
 				}
 			}
 			.form-side {
 				width: 30%;
 				.left;
-				padding: 0 0 0 30px;
+				padding: 0 0 0 50px;
 				.align-center;
+				@media @sm, @xs {
+					.width;
+					padding: 0;
+				}
 				.form-title {
 					line-height: 31px;
 					font-size: 24px;
 					font-weight: 600;
 					color: #333333;
-					padding-bottom: 15px;
+					padding-bottom: 25px;
 					display: block;
 				}
-				.form-group {
-					.clearfix;
-					&.option {
-						label {
-							.left;
-							color: #333;
-							font-weight: 600;
-						}
-						select {
-							float: left;
-							width: 150px;
-							margin-left: 15px;
-							border-radius: 1px;
-							border: 1px solid @orange;
-						}
+				.testimonial-form {
+					@media @sm, @xs {
+						width: 300px;
+						.center;
 					}
-					.form-control {
-						border: 1px solid #ccc;
-						border-radius: 1px;
-						color: #333;
-						height: auto;
-						padding: 8px 12px;
-					}
-					.checkbox+.checkbox, .radio+.radio {
-						margin-top: 10px;
-					}
-					.radio {
-						.left;
-						label {
-							padding-left: 40px;
-							color: #333;
-							font-weight: 600;
-						}
-						input[type=radio] {
-							margin: 0.5px 0px 0px -25px;
-						}
-						&:first-child {
+					.form-group {
+						.clearfix;
+						&.option {
+							margin-bottom: 30px;
 							label {
-								padding-left: 30px;
+								.left;
+								color: #333;
+								font-weight: 600;
+							}
+							select {
+								float: left;
+								width: 150px;
+								margin-left: 15px;
+								border-radius: 1px;
+								border: 1px solid @orange;
+							}
+						}
+						.form-control {
+							border: 1px solid #ccc;
+							border-radius: 1px;
+							color: #333;
+							height: auto;
+							padding: 8px 12px;
+						}
+						.checkbox+.checkbox, .radio+.radio {
+							margin-top: 10px;
+						}
+						.radio {
+							.left;
+							label {
+								padding-left: 40px;
+								color: #333;
+								font-weight: 600;
+							}
+							input[type=radio] {
+								margin: 0.5px 0px 0px -25px;
+							}
+							&:first-child {
+								label {
+									padding-left: 30px;
+								}
 							}
 						}
 					}
