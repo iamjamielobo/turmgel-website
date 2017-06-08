@@ -1593,9 +1593,6 @@ a:hover {
 .main-body .intro #slider {
   height: 420px;
   float: right;
-  opacity: 1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
 }
 @media (min-width: 320px) and (max-width: 768px), (min-width: 769px) and (max-width: 991px) {
   .main-body .intro #slider {
@@ -1609,8 +1606,11 @@ a:hover {
 }
 .main-body .intro #slider.fadeOut img {
   opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+}
+.main-body .intro #slider img {
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  opacity: 1;
 }
 .main-body .intro #slider img {
   max-height: 100%;
