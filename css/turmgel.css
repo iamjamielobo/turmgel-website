@@ -897,6 +897,9 @@ table {
   /* Opera 10.5, IE 9 */
   text-align: left;
 }
+.panel-body strong {
+  font-weight: 600;
+}
 .panel-group .panel {
   border-radius: 0;
 }
@@ -904,6 +907,7 @@ table {
   font-size: 21px;
   padding-right: 30px;
   color: #333;
+  line-height: 27px;
 }
 .main-body .accordian-container .lhs .btn,
 .main-body .accordian-container .rhs .btn {
