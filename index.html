@@ -24,7 +24,7 @@
 			<section class="intro">
 				<div class="wrapper">
 					<div id="slider" class="img-sec">
-						<img src="images/product-image.png">
+						<img id="slider_img" src="images/product-image.png">
 						<span class="__sub-text">WORLDWIDE PATENT PENDING*</span>
 					</div>
 					<div class="info">
@@ -733,8 +733,8 @@
 
 		    var imgArray = [
 		        'images/product-image.png',
-		        'images/product-image.png',
-		        'images/product-image.png'
+		        'images/hero-image-2.png',
+		        'images/hero-image-3.png'
 		    ];
 
 		    var curIndex = 0;
@@ -743,9 +743,11 @@
 		    function slideShow() {
 		        document.getElementById('slider').className += "fadeOut";
 		        setTimeout(function() {
-		            document.getElementById('slider').src = imgArray[curIndex];
-		            document.getElementById('slider').className = "";
-		        },1000);
+		            document.getElementById('slider_img').src = imgArray[curIndex];
+		            setTimeout(function() {
+		            	document.getElementById('slider').className = "";
+		            }, 100);
+		        }, 1500);
 		        curIndex++;
 		        if (curIndex == imgArray.length) { curIndex = 0; }
 		        setTimeout(slideShow, imgDuration);

@@ -378,7 +378,7 @@ table {
   }
   .main-body .intro #slider img {
     width: auto;
-    margin: 30px auto 0;
+    margin: auto;
     max-width: 554px;
   }
 }
@@ -1591,6 +1591,7 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fafaf7', GradientType=0);
 }
 .main-body .intro #slider {
+  height: 420px;
   float: right;
   opacity: 1;
   -webkit-transition: opacity 1s;
@@ -1610,6 +1611,9 @@ a:hover {
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+}
+.main-body .intro #slider img {
+  max-height: 100%;
 }
 .main-body .intro .info {
   float: left;
