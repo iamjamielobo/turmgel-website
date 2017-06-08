@@ -73,6 +73,7 @@
 		background: linear-gradient(to bottom, rgba(250,250,247,1) 0%, rgba(255,255,255,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafaf7', GradientType=0 );
 		#slider {
+			height: 420px;
 			float: right;
 			@media @xs, @sm {
 				width: 100%;
@@ -89,6 +90,10 @@
 		    		opacity: 0;
 		    		transition: opacity 1s;
 			    }
+			}
+
+			img {
+				max-height: 100%;
 			}
 		}
 		.info {
@@ -972,6 +977,15 @@
 								.width;
 								padding: 0;
 							}
+
+							@media @xs {
+								margin: 15px 0;
+							}
+
+							@media @sm {
+								margin: 15px 0;
+							}
+
 							&:nth-child(odd) {
 								padding-right: 25px;
 								@media @sm {

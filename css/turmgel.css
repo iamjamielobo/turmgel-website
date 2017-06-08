@@ -378,7 +378,7 @@ table {
   }
   .main-body .intro #slider img {
     width: auto;
-    margin: 30px auto 0;
+    margin: auto;
     max-width: 554px;
   }
 }
@@ -1595,6 +1595,7 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fafaf7', GradientType=0);
 }
 .main-body .intro #slider {
+  height: 420px;
   float: right;
   opacity: 1;
   -webkit-transition: opacity 1s;
@@ -1614,6 +1615,9 @@ a:hover {
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+}
+.main-body .intro #slider img {
+  max-height: 100%;
 }
 .main-body .intro .info {
   float: left;
@@ -2623,6 +2627,16 @@ a:hover {
   .main-body .technology_page .wrapper .tecnology-content .differences .container .block {
     width: 100%;
     padding: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block {
+    margin: 15px 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block {
+    margin: 15px 0;
   }
 }
 .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {
