@@ -2120,6 +2120,7 @@ a:hover {
 }
 .main-body .benefits .benefits-container ul.tabss li.active .__icon svg .mark-active {
   fill: #FE8535;
+  stroke: #FE8535;
 }
 .main-body .benefits .benefits-container .tab_content {
   border-top: 1px solid rgba(135, 130, 125, 0.2);
@@ -2616,6 +2617,16 @@ a:hover {
   .main-body .technology_page .wrapper .tecnology-content .differences .container .block {
     width: 100%;
     padding: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block {
+    margin: 15px 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block {
+    margin: 15px 0;
   }
 }
 .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {

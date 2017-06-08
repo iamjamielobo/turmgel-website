@@ -509,6 +509,7 @@
 							svg {
 								.mark-active {
 									fill: @orange;
+									stroke: @orange;
 								}
 							}
 						}
@@ -969,6 +970,15 @@
 								.width;
 								padding: 0;
 							}
+
+							@media @xs {
+								margin: 15px 0;
+							}
+
+							@media @sm {
+								margin: 15px 0;
+							}
+
 							&:nth-child(odd) {
 								padding-right: 25px;
 								@media @xs {
