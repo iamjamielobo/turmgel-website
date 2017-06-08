@@ -28,7 +28,6 @@
 		    background: #FE8535;
 		    color: #fff;
 		    font-weight: 600;
-		    border: 1px solid #FE8535;
 		    text-transform: uppercase;
 		}
 		&._orange-border {
@@ -43,9 +42,7 @@
 		.btn {
 			&._orange {
 				&:hover {
-				    background: #fff;
-				    color: #FE8535;
-				    border: 1px solid #fff;
+				    background: rgba(254, 133, 53, 0.5);
 				}
 			}
 			&._orange-border {
@@ -484,6 +481,11 @@
 		}
 		&._page {
 			padding-top: 0;
+			h2 {
+				background-color: #fbf9f7;
+				padding-top: 50px;
+				margin-bottom: 50px;
+			}
 		}
 	}
 	.benefits {
@@ -509,6 +511,7 @@
 							svg {
 								.mark-active {
 									fill: @orange;
+									stroke: @orange;
 								}
 							}
 						}
@@ -971,12 +974,18 @@
 							}
 							&:nth-child(odd) {
 								padding-right: 25px;
+								@media @sm {
+									padding-left: 0;
+								}
 								@media @xs {
 									padding: 0;
 								}
 							}
 							&:nth-child(even) {
 								padding-left: 25px;
+								@media @sm {
+									padding-right: 0;
+								}
 								@media @xs {
 									padding: 0;
 								}
@@ -1015,6 +1024,11 @@
 			}
 			.accordian-container {
 				margin-bottom: 80px;
+				.lhs {
+					@media @sm {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 	}
