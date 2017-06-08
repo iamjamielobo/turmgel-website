@@ -731,8 +731,8 @@
 
 		    var imgArray = [
 		        'images/product-image.png',
-		        'images/hero-image-2.png',
-		        'images/hero-image-3.png'
+		        'images/hero-image-2-slice.png',
+		        'images/hero-image-3-slice.png'
 		    ];
 
 		    var curIndex = 0;
@@ -745,7 +745,7 @@
 		            setTimeout(function() {
 		            	document.getElementById('slider').className = "";
 		            }, 100);
-		        }, 1500);
+		        }, 500);
 		        curIndex++;
 		        if (curIndex == imgArray.length) { curIndex = 0; }
 		        setTimeout(slideShow, imgDuration);

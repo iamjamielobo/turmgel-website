@@ -83,14 +83,18 @@
 					display: none;
 				}
 			}
-		    opacity: 1;
-		    transition: opacity 1s;
 		    &.fadeOut {
 		    	img {
 		    		opacity: 0;
-		    		transition: opacity 1s;
 			    }
 			}
+
+			
+	    	img {
+	    		transition: opacity 500ms;
+	    		opacity: 1;
+		    }
+			
 
 			img {
 				max-height: 100%;
