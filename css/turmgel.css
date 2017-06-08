@@ -1557,7 +1557,6 @@ a:hover {
   background: #FE8535;
   color: #fff;
   font-weight: 600;
-  border: 1px solid #FE8535;
   text-transform: uppercase;
 }
 .main-body .btn._orange-border {
@@ -1568,9 +1567,7 @@ a:hover {
   text-transform: uppercase;
 }
 .main-body:not(._touch) .btn._orange:hover {
-  background: #fff;
-  color: #FE8535;
-  border: 1px solid #fff;
+  background: rgba(254, 133, 53, 0.5);
 }
 .main-body:not(._touch) .btn._orange-border:hover {
   background: #FE8535;
@@ -2097,6 +2094,11 @@ a:hover {
 }
 .main-body .blog._page {
   padding-top: 0;
+}
+.main-body .blog._page h2 {
+  background-color: #fbf9f7;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 .main-body .benefits {
   padding-bottom: 0;
@@ -2632,6 +2634,11 @@ a:hover {
 .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {
   padding-right: 25px;
 }
+@media (min-width: 769px) and (max-width: 991px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {
+    padding-left: 0;
+  }
+}
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(odd) {
     padding: 0;
@@ -2639,6 +2646,11 @@ a:hover {
 }
 .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(even) {
   padding-left: 25px;
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(even) {
+    padding-right: 0;
+  }
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .technology_page .wrapper .tecnology-content .differences .container .block:nth-child(even) {
@@ -2673,6 +2685,11 @@ a:hover {
 }
 .main-body .technology_page .wrapper .accordian-container {
   margin-bottom: 80px;
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .main-body .technology_page .wrapper .accordian-container .lhs {
+    margin-bottom: 0;
+  }
 }
 .main-body .faq-page {
   background: #fbf9f7;

@@ -59,6 +59,7 @@ jQuery('document').ready(function() {
 
         $('ul.tabs li').removeClass('_active');
         $('.tab-content').removeClass('_active');
+        window.location.hash = tab_id;
 
         $(this).addClass('_active');
         $("#"+tab_id).addClass('_active');
