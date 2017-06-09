@@ -2201,8 +2201,7 @@ a:hover {
   background-color: #fbf9f7;
 }
 .main-body .benefits .benefits-container .tab_drawer_heading.d_active {
-  pointer-events: none;
-  position: relative;
+ position: relative;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main-body .benefits .benefits-container .tab_drawer_heading.d_active .__icon {
