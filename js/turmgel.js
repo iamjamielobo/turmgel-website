@@ -54,7 +54,7 @@ jQuery('document').ready(function() {
         }, 1000);
     });
 
-    $('.faq-page ul li').click(function(){
+    $('.faq-page ul li, .blog._page ul li').click(function(){
         var tab_id = $(this).attr('data-tab');
 
         $('ul.tabs li').removeClass('_active');
